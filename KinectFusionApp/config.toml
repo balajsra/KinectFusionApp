@@ -1,13 +1,13 @@
 # Configuration file for KinectFusionApp
 
-data_path = "/home/christian/share/dataset/"
-recording_name = "woman"
+data_path = "/home/sravan/Projects/UMICH/ROB-590/KinectFusionApp/KinectFusionApp/data/rgbd_dataset_freiburg1_xyz/gpu-test/"
+recording_name = "test"
 
 # Input camera settings
 [camera]
-#type = "Pseudo"
+type = "Pseudo"
 #type = "Xtion"
-type = "RealSense"
+#type = "RealSense"
 
 [camera.realsense]
 live = true

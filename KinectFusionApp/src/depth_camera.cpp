@@ -12,7 +12,7 @@
 #include <PS1080.h>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/imgcodecs.hpp>
-#include <opencv/cv.hpp>
+#include <opencv2/opencv.hpp>
 
 #pragma GCC diagnostic pop
 

@@ -21,8 +21,9 @@ ENDIF ()
 
 ## OpenCV
 # Optional: Set OpenCV_DIR if you want to use a custom version of OpenCV
-SET("OpenCV_DIR" "/opt/opencv/share/OpenCV")
-find_package(OpenCV 3.0 REQUIRED)
+# SET("OpenCV_DIR" "/opt/opencv/share/OpenCV")
+# find_package(OpenCV 3.0 REQUIRED)
+find_package(OpenCV REQUIRED)
 if (OpenCV_INCLUDE_DIRS)
     include_directories("${OpenCV_INCLUDE_DIRS}")
     link_directories(${OpenCV_DIR}/lib)
@@ -43,7 +44,7 @@ endif (OPENNI2_FOUND)
 ## Intel RealSense
 find_package(realsense2 REQUIRED)
 if (realsense2_FOUND)
-    include_directories("${realsense_INCLUDE_DIR}")
+    include_directories("${realsense2_INCLUDE_DIR}")
 endif (realsense2_FOUND)
 # ------------------------------------------------
 
